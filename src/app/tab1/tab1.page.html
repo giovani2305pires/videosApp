@@ -1,17 +1,114 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title>
-      Videos App
+    <ion-title color="light">
+      Filmes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="light">
+<ion-content [fullscreen]="true">
+  <!-- Searchbar with a placeholder -->
+  <ion-searchbar placeholder="Buscar Filmes"></ion-searchbar>
 
-  <img src="https://avatars.githubusercontent.com/u/61031340?v=4" alt="Foto do Giovani">
+  <ion-list>
 
-  <h2>Giovani Nogueira Pires</h2>
-  <p>Estudante da Etec Cidade do Livro</p>
-  <a href="mailto:giovani.pires3@etec.sp.gov.br">giovani.pires3@etec.sp.gov.br</a>
+    <ion-item routerLink="/guerra-amanha" lines="full">
+        <img slot="start" class="filme" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2n9Wu9wuy0HnP7XnTu4tjPdRaNZ.jpg">
+      <ion-label class="ion-text-wrap">
+        <div class="desc">
+          <h3>A Guerra do Amanhã</h3>
+          <p class="data">03/09/2021 (CN)</p>
+          <ion-badge color="gray">Ação</ion-badge>
+          <ion-badge color="gray">Ficção Científica</ion-badge>
+          <ion-badge color="gray">Aventura</ion-badge>
+        </div>
+      </ion-label>
 
+      <ion-chip class="nota-filme" color="success" outline>
+        <ion-label>82%</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <!--FIM DO PRIMEIRO FILME-->
+
+    <ion-item routerLink="/esquadrao-suicida" lines="full">
+        <img slot="start" class="filme" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wTS3dS2DJiMFFgqKDz5fxMTri.jpg">
+      <ion-label class="ion-text-wrap">
+        <div class="desc">
+          <h3>O Esquadrão Suicida</h3>
+          <p class="data">05/08/2021 (BR)</p>
+          <ion-badge color="gray">Ação</ion-badge>
+          <ion-badge color="gray">Aventura</ion-badge>
+          <ion-badge color="gray">Fantasia</ion-badge>
+          <ion-badge color="gray">Comédia</ion-badge>
+        </div>
+      </ion-label>
+
+      <ion-chip class="nota-filme" color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <!--FIM DO SEGUNDO FILME-->
+
+    <ion-item routerLink="/jungle-cruise" lines="full">
+        <img slot="start" class="filme"
+        src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9E76j2DcQv8LdbX1Wa9jpbDBfw1.jpg">
+      <ion-label class="ion-text-wrap">
+        <div class="desc">
+          <h3>Jungle Cruise</h3>
+          <p class="data">29/07/2021 (BR)</p>
+          <ion-badge color="gray">Aventura</ion-badge>
+          <ion-badge color="gray">Fantasia</ion-badge>
+          <ion-badge color="gray">Comédia</ion-badge>
+          <ion-badge color="gray">Ação</ion-badge>
+          </div>
+      </ion-label>
+
+      <ion-chip class="nota-filme" color="primary" outline>
+        <ion-label>79%</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <!--FIM DO TERCEIRO FILME-->
+
+    <ion-item routerLink="/justica-familia" lines="full">
+        <img slot="start" class="filme" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cygRJp2OQKsiGbJxKq5TbvzW9QR.jpg">
+      <ion-label class="ion-text-wrap">
+        <div class="desc">
+          <h3>Justiça em Família</h3>
+          <p class="data">18/08/2021 (BR)</p>
+          <ion-badge color="gray">Ação</ion-badge>
+          <ion-badge color="gray">Thriller</ion-badge>
+          <ion-badge color="gray">Drama</ion-badge>
+          </div>
+      </ion-label>
+
+      <ion-chip class="nota-filme" color="warning" outline>
+        <ion-label>69%</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <!--FIM DO QUARTO FILME-->
+
+    <ion-item routerLink="/infinito" lines="full">
+      <img slot="start" class="filme" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mLvjQ0IIdzZfQzQXULI7sIVxd8V.jpg">
+    <ion-label class="ion-text-wrap">
+      <div class="desc">
+        <h3>Infinito</h3>
+        <p class="data">10/06/2021 (BR)</p>
+        <ion-badge color="gray">Ficção Científica</ion-badge>
+        <ion-badge color="gray">Ação</ion-badge>
+        <ion-badge color="gray">Thriller</ion-badge>
+        </div>
+    </ion-label>
+
+    <ion-chip class="nota-filme" color="primary" outline>
+      <ion-label>75%</ion-label>
+    </ion-chip>
+  </ion-item>
+
+  <!--FIM DO QUINTO FILME-->
+  
+    </ion-list>
 </ion-content>
